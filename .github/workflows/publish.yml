@@ -24,6 +24,6 @@ jobs:
         run: python -m build
       - name: Publish to PyPI
         run: |
-          python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+          python -m twine upload dist/*
         env:
           TWINE_REPOSITORY_URL: https://upload.pypi.org/legacy/
