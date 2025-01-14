@@ -19,9 +19,33 @@ parser = load_health_data('export.xml')
 # Get data as pandas DataFrames
 dataframes = parser.to_dataframes()
 
-# Access specific measurements
+# Physical Measurements:
+height_df = dataframes['HKQuantityTypeIdentifierHeight']
+body_mass_df = dataframes['HKQuantityTypeIdentifierBodyMass']
+
+# Activity Tracking:
 steps_df = dataframes['HKQuantityTypeIdentifierStepCount']
-sleep_df = dataframes['HKCategoryTypeIdentifierSleepAnalysis']
+distance_walking_running_df = dataframes['HKQuantityTypeIdentifierDistanceWalkingRunning']
+flights_climbed_df = dataframes['HKQuantityTypeIdentifierFlightsClimbed']
+
+# Energy Expenditure:
+basal_energy_burned_df = dataframes['HKQuantityTypeIdentifierBasalEnergyBurned']
+active_energy_burned_df = dataframes['HKQuantityTypeIdentifierActiveEnergyBurned']
+
+# Audio Exposure:
+headphone_audio_exposure_df = dataframes['HKQuantityTypeIdentifierHeadphoneAudioExposure']
+audio_exposure_event_df = dataframes['HKCategoryTypeIdentifierHeadphoneAudioExposureEvent']
+
+# Walking Metrics:
+walking_double_support_percentage_df = dataframes['HKQuantityTypeIdentifierWalkingDoubleSupportPercentage']
+walking_speed_df = dataframes['HKQuantityTypeIdentifierWalkingSpeed']
+walking_step_length_df = dataframes['HKQuantityTypeIdentifierWalkingStepLength']
+walking_asymmetry_percentage_df = dataframes['HKQuantityTypeIdentifierWalkingAsymmetryPercentage']
+walking_steadiness_df = dataframes['HKQuantityTypeIdentifierAppleWalkingSteadiness']
+
+# Sleep Metrics:
+sleep_analysis_df = dataframes['HKCategoryTypeIdentifierSleepAnalysis']
+sleep_duration_goal_df = dataframes['HKDataTypeSleepDurationGoal']
 ```
 
 ## Features
