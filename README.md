@@ -5,7 +5,7 @@ A Python package for parsing and analyzing Apple Health Export data.
 ## Installation
 
 ```bash
-pip install parse_apple_health_data
+pip install parse-apple-health-data
 ```
 
 ## Usage
