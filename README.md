@@ -1,4 +1,4 @@
-# Apple Health Parser
+# Apple Health Data Parser
 
 https://pypi.org/project/parse-apple-health-data/1.0.0/
 
