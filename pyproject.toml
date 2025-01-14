@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "parse_apple_health_data"
-version = "0.1.0"
+version = "1.0.0"
 authors = [
     { name="Lauri Soome", email="las623@lehigh.edu" },
 ]

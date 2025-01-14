@@ -1,6 +1,6 @@
 # Apple Health Parser
 
-https://pypi.org/project/parse-apple-health-data/0.1.0/
+https://pypi.org/project/parse-apple-health-data/1.0.0/
 
 A Python package for parsing and analyzing Apple Health Export data.
 
